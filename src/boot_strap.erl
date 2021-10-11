@@ -71,12 +71,12 @@ init()->
     {parent_dir,ParentDir}=lists:keyfind(parent_dir,1,Env),
     ok=application:set_env(?MODULE,parent_dir,ParentDir), 
 
-    {log_source_dir,Source}=lists:keyfind(log_source_dir,1,Env),
-    ok=application:set_env(?MODULE,log_source_dir,Source), 
+  %  {log_source_dir,Source}=lists:keyfind(log_source_dir,1,Env),
+%    ok=application:set_env(?MODULE,log_source_dir,Source), 
 
-    {log_backup_dir,Backup}=lists:keyfind(log_backup_dir,1,Env),
-    ok=application:set_env(?MODULE,log_backup_dir,Backup), 
-    {log_file_ext,Ext}=lists:keyfind(log_file_ext,1,Env),
-    ok=application:set_env(?MODULE,log_file_ext,Ext),
+%    {log_backup_dir,Backup}=lists:keyfind(log_backup_dir,1,Env),
+%    ok=application:set_env(?MODULE,log_backup_dir,Backup), 
+%    {log_file_ext,Ext}=lists:keyfind(log_file_ext,1,Env),
+%    ok=application:set_env(?MODULE,log_file_ext,Ext),
 
     ok.

@@ -11,9 +11,6 @@
 {start_phases, []},
 {git_path,"https://github.com/joq62/boot_strap.git"},
 {env,[{git_path_start,"https://github.com/joq62/controller.git"},
-      {parent_dir,"applications"},
-      {log_source_dir,"log"},
-      {log_backup_dir,"logs"},
-      {log_file_ext,".log"}
+      {parent_dir,"applications"}
       ]}
 ]}.
