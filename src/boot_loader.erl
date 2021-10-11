@@ -42,6 +42,12 @@ scratch_host(ParentDir)->
     ok.
 
 start_copy_files(ParentDir,LogSource,FileExtension,LogBackUp)->
+    case filelib:is_dir(ParentDir) of
+	false->
+	    ok=file:make_dir(ParentDir);
+	true->
+	    nop
+    end,
     case filelib:is_dir(LogBackUp) of
 	false->
 	    ok=file:make_dir(LogBackUp);
