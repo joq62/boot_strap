@@ -1,12 +1,12 @@
 all:
 #	service
 	rm -rf applications glur* logs ebin/* *_ebin;
+	rm -rf 1 2 3 4 5 6 7 8 9 controller sd dbase;
 	rm -rf src/*.beam *.beam  test_src/*.beam test_ebin;
 	rm -rf  *~ */*~  erl_cra*;
-	rm -rf *_specs *_config *.log;
 #	common
-	cp ../common/src/*.app ebin;
-	erlc -o ebin ../common/src/*.erl;
+	cp ../../common/src/*.app ebin;
+	erlc -o ebin ../../common/src/*.erl;
 #	app
 	cp src/*.app ebin;
 	erlc -o ebin src/*.erl;
@@ -16,8 +16,8 @@ unit_test:
 	rm -rf  *~ */*~  erl_cra*;
 	mkdir test_ebin;
 #	common
-	cp ../common/src/*.app ebin;
-	erlc -o ebin ../common/src/*.erl;
+	cp ../../common/src/*.app ebin;
+	erlc -o ebin ../../common/src/*.erl;
 #	app
 	cp src/*.app ebin;
 	erlc -o ebin src/*.erl;

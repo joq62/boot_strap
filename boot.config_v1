@@ -1,0 +1,22 @@
+%%
+%% Information for boot
+%
+
+%% -----------------------Nodes to contact --------------------------------
+
+{nodes_to_contact,['1@c100','2@c100']}.
+
+%% -----------------------Nodes to start --------------------------------
+
+{nodes_to_start,[{"c100","1","-pa 1/ebin -setcookie cookie"},
+		  {"c100","2","-pa 2/ebin -setcookie cookie"},
+		  {"c100","3","-pa 3/ebin -setcookie cookie"},
+		  {"c100","4","-pa 4/ebin -setcookie cookie"},
+		  {"c100","5","-pa 5/ebin -setcookie cookie"},
+		  {"c100","6","-pa 6/ebin -setcookie cookie"},
+		  {"c100","7","-pa 7/ebin -setcookie cookie"},
+		  {"c100","8","-pa 8/ebin -setcookie cookie"},
+		  {"c100","9","-pa 9/ebin -setcookie cookie"},
+		  {"c100","controller","-pa controller/ebin -setcookie cookie"},
+		  {"c100","sd","-pa sd/ebin -setcookie cookie"},
+		  {"c100","dbase","-pa dbase/ebin -setcookie cookie"}]}.
