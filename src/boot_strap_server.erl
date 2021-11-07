@@ -49,9 +49,7 @@ stop()-> gen_server:call(?MODULE, {stop},infinity).
 %%          {stop, Reason}
 %% --------------------------------------------------------------------
 init([]) ->
-    {ok,ControllerGitPath}=application:get_env(git_path_start), 
-    {ok,ParentDir}=application:get_env(parent_dir), 
-    ok=boot_loader:boot(ControllerGitPath,ParentDir),
+    {ok,_}=boot_loader:initial_boot(),
     
     {ok, #state{}}.
 
